@@ -24,7 +24,7 @@ const Projets = ({ projets }) => {
             </div>
             <div className="content">
                 <header>
-                    <h4>{projets[index].titre}</h4>
+                    <h4>{projets[index].sousTitre}</h4>
                 </header>
                 <p><strong>Éléments importants:</strong></p>
                 <ul>

@@ -22,7 +22,7 @@ const ProjetImages = ({ projet }) => {
             </div>
             <div className="content">
                 <header>
-                    <h4>{projet.titre}</h4>
+                    <h4>{projet.sousTitre}</h4>
                 </header>
                 <p><strong>Éléments importants:</strong></p>
                 <ul>

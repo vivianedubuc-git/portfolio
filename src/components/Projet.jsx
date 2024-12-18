@@ -3,12 +3,12 @@ const Projet = ({ projet }) => {
         <section>
             <div className="row-multislide">
                 <div className="video">
-                    <video src={projet.video} controls></video>
+                    {projet.img.includes("images") ? <img src={projet.img} alt="" /> : <video src={projet.img} controls></video>}
                 </div>
             </div>
             <div className="content">
                 <header>
-                    <h4>{projet.titre}</h4>
+                    <h4>{projet.sousTitre}</h4>
                 </header>
                 <p><strong>Éléments importants:</strong></p>
                 <ul>

@@ -1,18 +1,33 @@
 import ProjetImages from "../components/ProjetImages";
+import Projet from "../components/Projet";
 import { motion } from "framer-motion";
 
 const projets = [
     {
-        img: [],
-        titre: "Jeu",
+        img: ["images/Sarcophagus1.jpg", "images/Sarcophagus2.jpg"],
+        titre: "Sarcophagus",
+        sousTitre: "Prototype d'un RPG",
         competences: [
-            { competence: "" }
+            { competence: "Rôle technique de programmeur" },
+            { competence: "Importance de transmettre l'essence d'un jeu" }
         ],
         langages: [
-            { langage: "" }
+            { langage: "C# dans Unity" }
         ]
     }
 ];
+const projet = {
+    img: "images/Tarot.jpg",
+    titre: "Tarot",
+    sousTitre: "Recherche-création sur le roman vidéoludique",
+    competences: [
+        { competence: "Rôle de concepteur narratif" },
+        { competence: "Expérience documentée dans un journal de bord" }
+    ],
+    langages: [
+        { langage: "Python dans Ren'Py" }
+    ]
+};
 
 const JeuxVideo = () => {
     return (
@@ -29,6 +44,12 @@ const JeuxVideo = () => {
                         </div>
                     </div>
                 )}
+                <div className="row-slide">
+                    <h3>{projet.titre}</h3>
+                    <div>
+                        <Projet projet={projet}></Projet>
+                    </div>
+                </div>
             </article>
         </motion.section>
     );
